@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style-eszkozok.css">
+
+
+      <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <!-- Boxicons ikoncsomag -->
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+
+</head>
+<button id="backToTop" aria-label="Back to Top">
+  <i class="bx bx-up-arrow-alt"></i>
+</button>
+<body>
+<header>
+  <nav class="navbar">
+    <div class="logo-container">
+        <img src="images/mylogo1.PNG" alt="Fő kép" class="benedek-logo">
+    </div>
+    <ul class="nav-list">
+        <li><i class="bx bxs-user"></i><a href="#rólam">Rólam</a></li>
+        <li><i class="bx bx-intersect"></i><a href="#témakörök">Témakörök</a></li>
+        <li><i class="bx bx-camera"></i><a href="#eszközök">Mivel dolgozom</a></li>
+        <li><i class="bx bx-info-square"></i><a href="#gyik">GYIK</a></li>
+        <li><i class="bx bx-photo-album"></i><a href="galeria.html">Galéria</a></li>
+        <li><i class="bx bx-envelope"></i><a href="#kapcsolat">Kapcsolat</a></li>
+    </ul>
+    
+    <!-- hamburgermenü-->
+    <div class="menu-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    
+ </nav>
+</header>
+
+<section id="rólam">
+
+  <section class="container"> 
+    <div class="main-image-container">   
+      <img src="images/Benedek.jpg" alt="Portré" />
+      <div class="overlay-text"> 
+        <h1>Bognár Benedek</h1>
+        <p>Fotográfus & történetmesélő. Szemem a részleteken, szívem az embereken. Megörökítem azt, ami múlhatatlan.</p>
+        <a href="galeria.html" class="btn">Galéria megtekintése</a>
+      </div>
+    </div>
+  </section>
+
+</section>
+
+
+<section id="témakörök">
+<section class="témakörök-container">
+  <div class="témakörök-szöveg">
+       <div class="text1">
+       <h2>Esküvői fotózás</h2>
+              <div class="text1-1">
+                 <p>Megörökítem életed legboldogabb napját, a készülődéstől kezdve a szertartáson át egészen a lagzi hangulatáig.</p>
+              </div>
+        </div>
+  </div>
+  <div class="témakörök-galéria">      <!-- class=gallery-container: abognair webolda mintája miatt fontos-->
+        <img class="gallery-slide active" src="images/eskuvo1.jpg" alt="Kép 1">
+        <img class="gallery-slide" src="images/eskuvo2.webp" alt="Kép 2">
+        <img class="gallery-slide" src="images/eskuvo3.jpg" alt="Kép 3">
+        <img class="gallery-slide" src="images/eskuvo4.jpg" alt="Kép 4">
+            <button class="prev">&#10094;</button>
+            <button class="next">&#10095;</button>
+  </div>
+  </section>
+
+<section class="témakörök-container">
+  <div class="témakörök-szöveg">
+       <div class="text1">
+       <h2>Portréfotózás</h2>
+              <div class="text1-1">
+                 <p>Akár személyes portréra, üzleti portréra vagy kreatív fotózásra van szükséged, célom, hogy kiemeljem személyiségedet és egyediségedet.</p>
+              </div>
+        </div>
+  </div>
+  <div class="témakörök-galéria">      <!-- class=gallery-container: abognair webolda mintája miatt fontos-->
+        <img class="gallery-slide active" src="images/portre1.jpg" alt="Kép 1">
+        <img class="gallery-slide" src="images/portre2.jpg" alt="Kép 2">
+        <img class="gallery-slide" src="images/portre3.jpg" alt="Kép 3">
+        <img class="gallery-slide" src="images/portre4.jpg" alt="Kép 4">
+            <button class="prev">&#10094;</button>
+            <button class="next">&#10095;</button>
+  </div>
+  </section>
+  
+<section class="témakörök-container">
+  <div class="témakörök-szöveg">
+       <div class="text1">
+       <h2>Családi fotózás</h2>
+              <div class="text1-1">
+                 <p>Vidám, szeretetteljes képek, amelyek családotok összetartását és boldogságát tükrözik.</p>
+              </div>
+        </div>
+  </div>
+  <div class="témakörök-galéria">      <!-- class=gallery-container: abognair webolda mintája miatt fontos-->
+        <img class="gallery-slide active" src="images/csaladi1.jpg" alt="Kép 1">
+        <img class="gallery-slide" src="images/csaladi2.jpg" alt="Kép 2">
+        <img class="gallery-slide" src="images/csaladi3.jpg" alt="Kép 3">
+        <img class="gallery-slide" src="images/csaladi4.jpg" alt="Kép 4">
+            <button class="prev">&#10094;</button>
+            <button class="next">&#10095;</button>
+  </div>
+  </section>
+
+<section class="témakörök-container">
+  <div class="témakörök-szöveg">
+       <div class="text1">
+       <h2>Páros fotózás</h2>
+              <div class="text1-1">
+                 <p>Meghitt, érzelemdús képek pároknak, legyen szó évfordulóról, eljegyzésről vagy egyszerűen csak romantikus pillanatok megörökítéséről.</p>
+              </div>
+        </div>
+  </div>
+  <div class="témakörök-galéria">      <!-- class=gallery-container: abognair webolda mintája miatt fontos-->
+        <img class="gallery-slide active" src="images/paros1.jpg" alt="Kép 1">
+        <img class="gallery-slide" src="images/paros2.jpg" alt="Kép 2">
+        <img class="gallery-slide" src="images/paros3.jpg" alt="Kép 3">
+        <img class="gallery-slide" src="images/paros4.jpg" alt="Kép 4">
+            <button class="prev">&#10094;</button>
+            <button class="next">&#10095;</button>
+  </div>
+  </section>
+
+<section class="témakörök-container">
+  <div class="témakörök-szöveg">
+       <div class="text1">
+       <h2>Eseményfotózás</h2>
+              <div class="text1-1">
+                 <p>Születésnapok, keresztelők, vállalati események megörökítése professzionális minőségben, figyelve minden részletre.</p>
+              </div>
+        </div>
+  </div>
+  <div class="témakörök-galéria">      <!-- class=gallery-container: bognair webolda mintája miatt fontos-->
+        <img class="gallery-slide active" src="images/esemeny1.jpg" alt="Kép 1">
+        <img class="gallery-slide" src="images/esemeny2.jpg" alt="Kép 2">
+        <img class="gallery-slide" src="images/esemeny3.jpg" alt="Kép 3">
+        <img class="gallery-slide" src="images/esemeny4.jpg" alt="Kép 4">
+            <button class="prev">&#10094;</button>
+            <button class="next">&#10095;</button>
+  </div>
+</section>
+</section>
+
+
+<section id="gyik">
+<div class="fogyik-container">
+
+  <div class="gyik-container">
+    <p>Mennyi idő alatt kapom meg a fotókat?</p>
+    <button class="toggle-button" id="toggleBtn">&#9660;</button>
+
+    <div class="extra-text" id="extraText">
+      <p>Az elkészült képeket általában 1-2 héten belül átadom, esküvők esetében pedig 3-4 hét a feldolgozási idő.</p>
+    </div>
+  </div>
+
+
+  <div class="gyik-container">
+    <p>Hány képet kapok?</p>
+    <button class="toggle-button" id="toggleBtn">&#9660;</button>
+
+    <div class="extra-text" id="extraText">
+      <p>Az esemény típusától függően 50-500 db retusált, nagy felbontású fotót biztosítok, amelyeket digitálisan, személyes online galériában érhetsz el.</p>
+    </div>
+  </div>
+
+
+  <div class="gyik-container">
+    <p>Utazással kapcsolatos díjak vannak?</p>
+    <button class="toggle-button" id="toggleBtn">&#9660;</button>
+
+    <div class="extra-text" id="extraText">
+      <p>Alapvetően a szolgáltatásaim tartalmaznak utazási költséget is 50 km-es körzeten belül. Távolabbi helyszínek esetén előre egyeztetünk.</p>
+    </div>
+  </div>
+
+
+  <div class="gyik-container">
+    <p>Van lehetőség egyedi kérésre?</p>
+    <button class="toggle-button" id="toggleBtn">&#9660;</button>
+
+    <div class="extra-text" id="extraText">
+      <p>Természetesen! Fontos számomra, hogy a fotók teljes mértékben a te elképzeléseid szerint készüljenek el, ezért bátran oszd meg velem egyedi elképzeléseidet!</p>
+    </div>
+  </div>
+
+
+  <div class="gyik-container">
+    <p>Ide jön a kérdés amire majd lenn lesz válasz?</p>
+    <button class="toggle-button" id="toggleBtn">&#9660;</button>
+
+    <div class="extra-text" id="extraText">
+      <p>Igen, a gomb megnyomását követően itt fog megjelenni a válasz.</p>
+    </div>
+  </div>
+
+</div>
+</section>
+
+
+
+
+<section id="eszközök">
+
+  <div class="eszközök-cím">
+<h1>Hardverek, amikkel dolgozunk</h1>
+</div>
+
+
+  <div class="container-eszkozok">
+
+    <!-- PC Szekció: két sor magasságban -->
+    <div class="pc-section section">
+      <h2>MacBook Air 13" (2020)</h2>
+      <img src="images/laptop.jpg" alt="MacBook Air">
+    </div>
+
+    <!-- Perifériák Szekció: első sor második oszlop -->
+    <div class="perif-section section">
+      <h2>Perifériák</h2>
+      <div class="card">
+        <ul class="perif-list">
+          <li><i class="bx bx-chip"></i>Apple M1 Chip</li>
+          <li><i class="bx bx-memory-card"></i>8GB RAM</li>
+          <li><i class="bx bx-hdd"></i>1TB LACIE SSD</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Kellékek Szekció: második sor második oszlop -->
+    <div class="kellek-section section">
+      <div class="card">
+        <ul class="kellek-list">
+          <li><i class="bx bx-desktop"></i>Xiaomi Mi 23.8" 1C </li>
+          <li><i class="bx bxs-keyboard"></i>Keychron B6 Pro</li>
+          <li><i class="bx bx-mouse"></i>Razer Atheris White</li>
+          <li><i class="bx bx-headphone"></i>Apple Airpods Pro</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="eszközök-cím">
+  <h1>Fotós, videós setup</h1>
+</div>
+
+  <div class="container-eszkozok">
+
+    <!-- PC Szekció: két sor magasságban -->
+    <div class="pc-section section">
+      <h2>Sony Alpha A7 III</h2>
+      <img src="images/sony.png" alt="MacBook Air">
+    </div>
+
+    <!-- Perifériák Szekció: első sor második oszlop -->
+    <div class="perif-section section">
+      <h2>Kiegészítők</h2>
+      <div class="card">
+        <ul class="perif-list">
+          <li><i class="bx bx-camera-home"></i>Sony FE 24-70mm f2.8 GMII</li>
+          <li><i class="bx bx-camera-home"></i>Sigma 85mm ART f/1.4</li>
+          <li><i class="bx bx-bulb"></i>Aputure Nova P300c</li>
+          <li><i class="bx bx-bulb"></i>Philips Hue</li>
+          <li><i class="bx bx-microphone"></i>Sennheiser MKH 416</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Kellékek Szekció: második sor második oszlop -->
+    <div class="kellek-section section">
+      <div class="card">
+        <ul class="kellek-list">
+          <li><i class="bx bxl-adobe"></i>Adobe Photoshop</li>
+          <li><i class="bx bx-color"></i>Adobe Lightroom</li>
+          <li><i class="bx bx-cut"></i>DaVinci Resolve</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+<section id="kapcsolat">
+
+<footer class="site-footer">
+  <div class="footer-container">
+    <!-- Rólunk / Cégnév -->
+    <div class="footer-column footer-about">
+      <h3>BognAIR FotóStúdió</h3>
+      <p>Minőségi fotózás profi szakemberektől – esküvő, portré, esemény.</p>
+    </div>
+
+    <!-- Elérhetőség -->
+    <div class="footer-column footer-contact">
+      <h4>Elérhetőség</h4>
+      <ul>
+        <li><i class="bx bx-phone"></i> +36 20 481 3057</li>
+        <li><i class="bx bx-envelope"></i> benedek01bognar@gmail.com</li>
+        <li><i class="bx bx-map"></i> 1144 Budapest, Szentmihályi út 20-22</li>
+      </ul>
+    </div>
+
+    <!-- Social media -->
+    <div class="footer-column footer-social">
+      <h4>Kövess minket</h4>
+      <div class="social-links">
+        <a href="#" aria-label="Facebook"><i class="bx bxl-facebook"></i></a>
+        <a href="#" aria-label="Instagram"><i class="bx bxl-instagram"></i></a>
+        <a href="#" aria-label="YouTube"><i class="bx bxl-youtube"></i></a>
+        <a href="#" aria-label="LinkedIn"><i class="bx bxl-linkedin"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2025 BognAIR FotóStúdió. Minden jog fenntartva.</p>
+  </div>
+</footer>
+
+</section>
+
+
+
+
+<script src="script.js"></script> <!-- A JavaScript fájl kapcsolása -->
+
+
+<script>
+// Back to Top inline script
+(function() {
+  var btn = document.getElementById('backToTop');
+  if (!btn) return;
+  window.addEventListener('scroll', function() {
+    if (window.scrollY > 200) btn.classList.add('visible');
+    else btn.classList.remove('visible');
+  });
+  btn.addEventListener('click', function(e) {
+    e.preventDefault();
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+})();
+</script>
+
+</body>
+</html>

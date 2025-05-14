@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style-eszkozok.css">
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+<!-- Boxicons ikoncsomag -->
+<link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet"
+
+</head>
+<body>
+<header>
+  <nav class="navbar">
+    <div class="logo-container">
+        <img src="images/mylogo1.PNG" alt="Fő kép" class="benedek-logo">
+    </div>
+    <ul class="nav-list">
+        <li><i class="bx bxs-user"></i><a href="index.html">Rólam</a></li>
+        <li><i class="bx bx-intersect"></i><a href="index.html">Témakörök</a></li>
+        <li><i class="bx bx-camera"></i><a href="index.html">Mivel dolgozom</a></li>
+        <li><i class="bx bx-info-square"></i><a href="index.html">GYIK</a></li>
+        <li><i class="bx bx-photo-album"></i><a href="galeria.html">Galéria</a></li>
+        <li><i class="bx bx-envelope"></i><a href="index.html">Kapcsolat</a></li>
+    </ul>
+    
+    <!-- hamburgermenü-->
+    <div class="menu-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    
+ </nav>
+</header>
+
+<main class="gallery">
+    <div class="gallery-item"><img src="images/eskuvo1.jpg" alt="Photo 1"></div>
+    <div class="gallery-item"><img src="images/paros3.jpg" alt="Photo 2"></div>
+    <div class="gallery-item"><img src="images/portre3.jpg" alt="Photo 3"></div>
+    <div class="gallery-item"><img src="images/esemeny4.jpg" alt="Photo 4"></div>
+    <div class="gallery-item"><img src="images/esemeny1.jpg" alt="Photo 5"></div>
+    <div class="gallery-item"><img src="images/paros3.jpg" alt="Photo 6"></div>
+    <div class="gallery-item"><img src="images/eskuvo1.jpg" alt="Photo 7"></div>
+    <div class="gallery-item"><img src="images/paros3.jpg" alt="Photo 8"></div>
+    <div class="gallery-item"><img src="images/portre3.jpg" alt="Photo 9"></div>
+    <div class="gallery-item"><img src="images/esemeny4.jpg" alt="Photo 10"></div>
+    <div class="gallery-item"><img src="images/esemeny1.jpg" alt="Photo 11"></div>
+    <div class="gallery-item"><img src="images/paros3.jpg" alt="Photo 12"></div>
+    <div class="gallery-item"><img src="images/eskuvo1.jpg" alt="Photo 13"></div>
+    <div class="gallery-item"><img src="images/paros3.jpg" alt="Photo 14"></div>
+    <div class="gallery-item"><img src="images/portre3.jpg" alt="Photo 15"></div>
+    <div class="gallery-item"><img src="images/esemeny4.jpg" alt="Photo 16"></div>
+    <div class="gallery-item"><img src="images/esemeny1.jpg" alt="Photo 17"></div>
+    <div class="gallery-item"><img src="images/paros3.jpg" alt="Photo 18"></div>
+</main>
+
+<div id="lightbox" class="lightbox">
+    <span class="close">&times;</span>
+    <img class="lightbox-content" id="lightbox-img">
+</div>
+
+
+<script src="script.js"></script> <!-- A JavaScript fájl kapcsolása -->
+<a href="#" id="backToTop" aria-label="Back to Top"><i class="bx bx-up-arrow-alt"></i></a>
+<script>
+// Back to Top inline script
+(function() {
+  var btn = document.getElementById('backToTop');
+  if (!btn) return;
+  window.addEventListener('scroll', function() {
+    if (window.scrollY > 200) btn.classList.add('visible');
+    else btn.classList.remove('visible');
+  });
+  btn.addEventListener('click', function(e) {
+    e.preventDefault();
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+})();
+</script>
+
+</body>
+</html>

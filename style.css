@@ -1,0 +1,654 @@
+/* === Alap reset és globális stílusok === */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ffffff;
+    color: #333;
+    line-height: 1.6;
+    font-family: 'Poppins', sans-serif;
+}
+html {
+    scroll-behavior: smooth;
+
+}
+
+/* === Fejléc és navigáció === */
+header {
+    background-color: #000;
+    color: #fff;
+    padding: 00px;
+    border-radius: 12px;
+    margin: 15px 15px 15px 15px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.5);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Logo */
+.logo-container {
+    flex: 1;
+    margin: 0 0;
+
+}
+
+.benedek-logo {
+    height: 50px;
+}
+
+/* Navigációs lista */
+.nav-list {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    margin: 12px 0;
+    font-size: 1.2rem;
+}
+
+.nav-list li i {
+    margin-right: 8px;
+}
+
+.nav-list li a:hover {
+    color: #4caf50;
+}
+
+/* Hamburgermenü (mobil) */
+.menu-icon {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.menu-icon span {
+    height: 3px;
+    width: 25px;
+    background: #fff;
+    margin: 4px 0;
+    transition: all 1.3s ease;
+}
+
+/* Mobil nézet: navigáció elrejtése, hamburger megjelenítése */
+@media (max-width: 768px) {
+    .navbar {
+        align-items: flex-start;
+    }
+    .nav-list {
+        position: absolute;
+        right: 0;
+        background-color: #000;
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        align-items: left;
+        display: none;
+        font-size: 0.2rem;
+        gap:0.5px;
+    }
+    /* Amikor JavaScript hozzáadja a .show osztályt */
+    .nav-list.show {
+        display: flex;
+    }
+    .menu-icon {
+        display: flex;
+        margin: 0 auto;
+    }
+    .container {
+        flex-direction: column;
+        padding:   0px;
+    }
+}
+
+/* === Rólam szekció === */
+#rólam {
+    padding: 4px 20px 4px;
+    text-align: center;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+}
+
+.main-image-container {
+    position: relative;
+    width: 100%;
+    height: 40%;
+
+    max-width: 1200px;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.main-image-container img {
+    width: 100%;
+    height: 40%;
+    display: block;
+    border-radius: 20px;
+    object-fit: cover;
+    filter: brightness(0.75);
+}
+
+/* Szöveg doboz a képen */
+.overlay-text {
+    position: absolute;
+    bottom: 10%;
+    left: 5%;
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(8px);
+    padding: 30px 40px;
+    border-radius: 16px;
+    max-width: 500px;
+    box-shadow: 0 10px 30px rgba(255, 255, 255, 0.1);
+    animation: fadeInUp 1s ease-out;
+}
+
+.overlay-text h1 {
+    font-size: clamp(26px, 5vw, 42px);
+    margin-bottom: 12px;
+    box-shadow: 0 10px 30px rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    background-color: transparent;
+}
+
+.overlay-text p {
+    font-size: clamp(16px, 2vw, 20px);
+    margin-bottom: 24px;
+    line-height: 1.6;
+    box-shadow: 0 10px 30px rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    background-color: transparent;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #111827;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #1f2937;
+}
+
+/* Reszponzivitás */
+@media (max-width: 768px) {
+    .overlay-text {
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 5%;
+        padding: 20px;
+        max-width: 90%;
+    }
+}
+
+@keyframes fadeInUp {
+    0% {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+
+/* === Témakörök szekció === */
+#témakörök {
+    padding: 40px 20px;
+    background-color: #f5f5f5;
+}
+
+/* A témakörök elemeit tartalmazó konténer */
+.témakörök-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1600px;
+    margin: 0 auto 40px;
+    padding: 20px;
+    gap: 20px;
+}
+
+/* Szöveges rész */
+.témakörök-szöveg {
+    flex: 1;
+}
+
+.témakörök-szöveg h2 {
+    margin-bottom: 10px;
+    font-size: clamp(28px, 4vw, 50px);
+}
+
+.témakörök-szöveg p {
+    line-height: 1.6;
+    font-size: clamp(18px, 4vw, 30px);
+}
+
+/* Galéria rész */
+.témakörök-galéria {
+    flex: 1;
+    position: relative;
+    width: 100%;
+}
+
+.témakörök-galéria img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    display: none;
+    object-fit: cover;
+}
+
+.témakörök-galéria img.active {
+    display: block;
+}
+
+.témakörök-galéria .prev,
+.témakörök-galéria .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 1.5rem;
+    border-radius: 50%;
+}
+
+.témakörök-galéria .prev {
+    left: 10px;
+}
+
+.témakörök-galéria .next {
+    right: 10px;
+}
+
+/* Mobil nézet: témakörök konténer oszloposra */
+@media (max-width: 768px) {
+    .témakörök-container {
+        flex-direction: column;
+    }
+}
+
+/* === GYIK szekció === */
+.fogyik-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+    padding: 60px 40px;
+    background-color: #ffffff;
+}
+
+.gyik-container {
+    border: 3px solid #000000;
+    padding: 20px;
+    width: 100%;
+    max-width: 1400px;
+    height: auto;
+    border-radius: 15px;
+    background-color: rgb(173, 173, 173);
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+    position: relative;
+    font-size: clamp(18px, 4vw, 50px);
+}
+
+.toggle-button {
+    position: absolute;
+    right: 20px;
+    margin-bottom: 15px;
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    transform: rotate(0deg);
+    transition: transform 0.3s ease;
+}
+
+.toggle-button.open {
+    transform: rotate(180deg);
+}
+
+.extra-text {
+    margin-top: 20px;
+    display: none;
+    animation: fadeIn 0.3s ease;
+    font-weight: bold;
+}
+
+.extra-text.show {
+    display: block;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* === GALÉRIA OLDAL === */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 10px;
+    padding: 20px;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: transform 0.2s;
+}
+
+.gallery-item img:hover {
+    transform: scale(1.03);
+}
+
+.lightbox {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    padding-top: 60px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.9);
+}
+
+.lightbox-content {
+    margin: auto;
+    display: block;
+    max-width: 90%;
+    max-height: 80%;
+}
+
+.close {
+    position: absolute;
+    top: 30px;
+    right: 40px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+/* === Menü lenyíláskor tolja le a tartalmat, X ikon rendezés === */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction:flex;
+    align-items: flex-start !important;
+  }
+  .logo-container {
+    margin: 10px 10px;
+
+  }
+  .menu-icon {
+    margin: 20px 0px;
+
+  }
+
+  .nav-list {
+    position: relative !important;
+    width: 100%;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+  }
+  .nav-list.show {
+    max-height: 150vh !important;
+  }
+}
+.menu-icon span {
+  transition: all 0.3s ease;
+  transform-origin: center;
+  width: 30px;
+  height: 3px;
+
+}
+.menu-icon span:nth-child(1) {
+    width: 22px;
+    height: 3px;
+    margin: 4px auto;   /* függőleges margó 4px, vízszintes auto = középre */
+}
+
+.menu-icon span:nth-child(2) {
+    width: 30px;
+    height: 3px;
+}
+
+.menu-icon span:nth-child(3) {
+    width: 22px;
+    height: 3px;
+    margin: 4px auto;   /* függőleges margó 4px, vízszintes auto = középre */
+}
+.menu-icon.open span:nth-child(1) {
+    transform: translateY(11px) rotate(45deg);
+
+}
+.menu-icon.open span:nth-child(2) {
+  opacity: 0;
+}
+.menu-icon.open span:nth-child(3) {
+    transform: translateY(-11px) rotate(-45deg);
+
+}
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;      /* egymás alá rendezi a tartalmat */
+        align-items: center;
+        justify-content: flex-start; /* ne középre, hanem felülről induljon */
+        padding: 0px 0px;
+        margin-bottom: 0%;
+        margin-top: 0%;
+    }
+
+    .main-image-container {
+        position: relative;
+        width: 100%;
+        max-width: 1200px;
+        overflow: hidden;
+        border-radius: 20px;
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+        height: auto;               /* automatikus magasság */
+        margin-bottom: 0px;        /* térköz a kép és a szövegdoboz közt */
+    }
+
+    .main-image-container img {
+        width: 100%;
+        height: auto;               /* arányos méretezés */
+        display: block;
+        border-radius: 20px;
+        object-fit: cover;
+        filter: brightness(0.75);
+    }
+
+    /* Szöveg doboz most már statikus */
+    .overlay-text {
+        position: relative;           /* ne legyen absolute! */
+        width: 100%;
+        max-width: 500px;
+        margin: 0 auto 20px;        /* középre, alul 20px */
+        background: rgba(255, 255, 255, 0.85);
+        backdrop-filter: blur(8px);
+        padding: 40px 20px;
+        border-radius: 16px;
+        box-shadow: 0 10px 30px rgba(255, 255, 255, 0.1);
+        animation: fadeInUp 1s ease-out;
+
+    }
+
+    .overlay-text h1 {
+        font-size: clamp(26px, 5vw, 42px);
+        margin-bottom: 12px;
+
+    }
+
+    .overlay-text p {
+        font-size: clamp(16px, 2vw, 20px);
+        margin-bottom: 24px;
+        line-height: 1.6;
+
+    }
+
+    .btn {
+        display: inline-block;
+        padding: 12px 24px;
+        background-color: #111827;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 8px;
+        font-weight: 500;
+        transition: background-color 0.3s ease;
+    }
+
+    .btn:hover {
+        background-color: #1f2937;
+    }
+}
+/* Footer */
+.site-footer {
+    background-color: #111;
+    color: #eee;
+    padding: 40px 20px 20px;
+    font-size: 0.9rem;
+    border-radius: 12px;
+    margin: 15px 15px 15px 15px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.5);
+  }
+  
+  .footer-container {
+    max-width: 1200px;
+    margin: 0 auto 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: space-between;
+  }
+  
+  .footer-column {
+    flex: 1;
+    min-width: 220px;
+  }
+  
+  .footer-about h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5em;
+  }
+  
+  .footer-contact h4,
+  .footer-social h4 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5em;
+  }
+  
+  .footer-contact ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-contact li {
+    margin-bottom: 0.6em;
+    display: flex;
+    align-items: center;
+  }
+  
+  .footer-contact li i {
+    font-size: 1.2rem;
+    margin-right: 0.6em;
+    color: #4caf50;
+  }
+  
+  .social-links a {
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 1.5rem;
+    color: #eee;
+    transition: color 0.3s ease;
+  }
+  
+  .social-links a:hover {
+    color: #4caf50;
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    border-top: 1px solid #333;
+    padding-top: 10px;
+  }
+  
+  @media (max-width: 768px) {
+    .footer-container {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+    .footer-column {
+      margin-bottom: 30px;
+    }
+    .social-links a {
+      margin: 0 8px;
+    }
+  }
+
+/* === Back to Top button === */
+#backToTop {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background-color: #4caf50;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.5rem;
+  line-height: 1;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  z-index: 9999;
+}
+#backToTop.visible {
+  opacity: 1;
+  visibility: visible;
+}
+#backToTop:hover {
+  opacity: 0.8;
+}
