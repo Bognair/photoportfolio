@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weboldal Munkáim</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style-web.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <!-- Boxicons ikoncsomag -->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+</head>
+<body>
+<header>
+  <nav class="navbar">
+    <div class="logo-container">
+        <img src="images/mylogo1.PNG" alt="Fő kép" class="benedek-logo">
+    </div>
+    <ul class="nav-list">
+        <li><i class="bx bxs-user"></i><a href="index.html#rólam">Rólam</a></li>
+        <li><i class="bx bx-photo-album"></i><a href="galeria.html">Galéria</a></li>
+        <li><i class="bx bx-desktop"></i><a href="weboldalak.html">Weboldal munkáim</a></li>
+    </ul>
+    <div class="menu-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+ </nav>
+</header>
+
+<section class="webportfolio-container">
+    <h1>Weboldal Munkáim</h1>
+    <div class="portfolio-grid">
+        <div class="portfolio-item">
+            <img src="https://via.placeholder.com/600x400?text=Projekt+1" alt="Projekt 1">
+            <h2>Projekt 1</h2>
+            <p>Rövid leírás a weboldalról.</p>
+        </div>
+        <div class="portfolio-item">
+            <img src="https://via.placeholder.com/600x400?text=Projekt+2" alt="Projekt 2">
+            <h2>Projekt 2</h2>
+            <p>Rövid leírás a weboldalról.</p>
+        </div>
+        <div class="portfolio-item">
+            <img src="https://via.placeholder.com/600x400?text=Projekt+3" alt="Projekt 3">
+            <h2>Projekt 3</h2>
+            <p>Rövid leírás a weboldalról.</p>
+        </div>
+    </div>
+</section>
+
+<div id="web-lightbox" class="lightbox">
+    <span class="close">&times;</span>
+    <img class="lightbox-content" id="web-lightbox-img">
+</div>
+
+<script src="script.js"></script>
+<script src="web.js"></script>
+</body>
+</html>
